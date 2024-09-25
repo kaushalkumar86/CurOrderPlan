@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <com.amazon.device.ads.AdLayout 
+        android:id="@+id/adview" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:baselineAligned="false" >
+        
+        <ScrollView
+	        android:layout_width="0dip" 
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.5"
+	        android:scrollbarStyle="outsideInset" >
+	        
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		        
+		        <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+		
+			        <TextView
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:text="@string/sd_contigency"
+			            android:layout_weight="1"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			        <TextView
+			            android:id="@+id/contigency_val"
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+			    </LinearLayout>
+			    
+		        <SeekBar
+			        android:id="@+id/contigency_select"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:max="6" />
+		        
+		         <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+			        
+			        <TextView
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1.30"
+			            android:gravity="left"
+			            android:text="@string/sd_plies"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+			        
+			
+			        <EditText
+			            android:id="@+id/max_plies"
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:ems="10"
+			            android:inputType="phone" />
+			        
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+			        
+			
+			        <TextView
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1.30"
+			            android:gravity="left"
+			            android:text="@string/sd_garment"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			        <EditText
+			            android:id="@+id/max_garment"
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:ems="10"
+			            android:inputType="phone" />
+			        
+			    </LinearLayout>
+			    
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="20dp" >
+			        
+				    <Button
+				        android:id="@+id/add_size"
+				        android:layout_width="0dip"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/sd_add_size" />
+				    
+				    <Button
+				        android:id="@+id/calc"
+				        android:layout_width="0dip"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/sd_calculate" />
+				    
+				    </LinearLayout>
+		        
+		    </LinearLayout>
+		</ScrollView>
+	    
+	    <RelativeLayout
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+		    <TextView
+		        android:id="@+id/first"
+			    style="?android:attr/listSeparatorTextViewStyle"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/sd_diff_sizes"
+			    android:layout_alignParentTop="true"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		    <LinearLayout
+		        android:id="@+id/third"
+		        android:layout_alignParentBottom="true"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+	        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sd_total"
+		            android:textColor="#FF00CC00"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		        
+		        <TextView
+		            android:id="@+id/total_val"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textColor="#FF00CC00"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		        
+		    </LinearLayout>
+		    
+		    <ListView
+		        android:id="@+id/size_data_list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/first"
+		        android:layout_above="@+id/third" >
+	
+	    	</ListView>
+	        
+		    
+	        
+	    </RelativeLayout>
+        
+    </LinearLayout>
+</LinearLayout>

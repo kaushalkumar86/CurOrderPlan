@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+	
+    <style name="Dialog_Fullscreen" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+		<item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>  
+        <item name="android:background">#ff000000</item>
+	</style>
+</resources>

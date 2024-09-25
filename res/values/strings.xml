@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">Cut Order Plan</string>
+    <string name="appKeyAmazon">933dbe7ae820422b97300a3b5d70a89e</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_about">About</string>
+    <string name="title_activity_main">Cut Order Plan</string>
+    
+    <string name="ss_new">New Project</string>
+    <string name="ss_existing">Extisting</string>
+    
+    <string name="sd_style_num">Style No.</string>
+    <string name="sd_diff_sizes">Size Details</string>
+    <string name="sd_add_size">Add New Size</string>
+    <string name="sd_calculate">Calculate</string>
+    <string name="sd_contigency">Contigency</string>
+    <string name="sd_total">Total : </string>
+    <string name="sd_plies">Max Plies Per Lay</string>
+    <string name="sd_garment">Max Garment Per Ply</string>
+    
+    
+    <string name="sdata_quant">Pieces</string>
+    <string name="sdata_conti_color">#ff37fb4a</string>
+    <string name="sdata_endbit_color">#ffff3434</string>
+
+    
+    <string name="ans_size">Size Name:</string>
+    <string name="ans_quantity">Quantity:</string>
+    <string name="ans_cont">Contigency:</string>
+    <string name="ans_end_bits">End Bits:</string>
+    <string name="ans_cuttable">Cuttable:</string>
+    <string name="ans_ok">OK:</string>
+    
+    <string name="new_size">Add New Size</string>
+    <string name="edit_size">Edit Size</string>
+    <string name="delete_size">Delete</string>
+    <string name="done_size">Done</string>
+    
+    <string name="mkr_result">Result</string>
+    <string name="mkr_detresult">Showing the number of markers and plies used in each marker with its breakup as in Lay X Plies</string>
+    <string name="mkr_pdf">Generate PDF</string>
+    
+    <string name="mkr_name">Marker</string>
+    <string name="mkr_plies">Plies</string>
+    <string name="mkr_brek">Break Up</string>
+    <string name="mkr_sizes">Sizes</string>
+    <string name="mkr_colon">:</string>
+    <string name="mkr_maxply">Max Plies/lay</string>
+    
+    <string name="loading">Cut Order Plan</string>
+    
+    <string name="logo">Cut Order Plan Logo</string>
+    <string name="detail">CutOrderPlan is a tool which creates cut plan to be used in garment industry.</string>
+    <string name="developer">Developed by: K.K.Agrawal</string>
+    <string name="email">Email: kaushal.kumar86@gmail.com</string>
+        
+</resources>

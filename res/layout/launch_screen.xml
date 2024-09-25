@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/ss_but_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ss_new" />
+
+    <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ss_existing" />
+
+    <ListView
+        android:id="@+id/ss_lst_existing"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+    </ListView>
+
+    <com.amazon.device.ads.AdLayout 
+        android:id="@+id/adview" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
